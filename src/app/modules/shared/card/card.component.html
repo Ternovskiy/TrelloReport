@@ -1,0 +1,36 @@
+<div class="card mt-2">
+  <div class="card-body p-2">
+
+    <a [attr.href]="Url" target="_blank">{{ Name }}</a>
+
+    <div class="row">
+      <div class="col">
+        План:
+        <span class="badge" [ngStyle]="{'min-width.px': 30}" [ngClass]="PlanClass" >
+            {{ Plan | time}}
+        </span>
+      </div>
+
+      <div class="col">
+          Факт:
+          <span class="badge badge-light" [ngStyle]="{'min-width.px': 30}">
+              {{ Time | time}}
+          </span>
+      </div>
+
+      <div class="col"  *ngIf="ShowState">
+          Статус:
+          <span class="badge badge-info" [ngStyle]="{'min-width.px': 30}">
+              {{ ListName}}
+          </span>
+      </div>
+
+      <div class="col"  *ngIf="!ShowState">
+          П-Ф:
+          <span class="badge" [ngStyle]="{'min-width.px': 30}"  [ngClass]="DifClass" >
+              {{ Dif| time}}
+          </span>
+      </div>
+    </div>
+  </div>
+</div>

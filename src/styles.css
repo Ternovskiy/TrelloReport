@@ -1,0 +1,250 @@
+/* 
+html,
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+a {
+  color: #000;
+}
+.page-content {
+  position: relative;
+}
+.page-content .preloader-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+}
+
+.page-content .preloader-overlay.show {
+  display: block;
+}
+.page-content .preloader {  
+  position: relative;
+  left: 50%;
+  top: 50%;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #9370DB;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+.page-content .preloader::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #BA55D3;
+  -webkit-animation: spin 3s linear infinite;
+  animation: spin 3s linear infinite;
+}
+.page-content .preloader::after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #FF00FF;
+  -webkit-animation: spin 1.5s linear infinite;
+  animation: spin 1.5s linear infinite;
+}
+
+.page-header,
+.page-footer {
+  min-height: 20px;
+  background-color: blueviolet;
+  color: #fff;
+  font-size: 14px;
+}
+.page-content {
+  flex-grow: 1;  
+}
+.page-header .container {
+    -ms-align-items: center;
+  align-items: center;
+}
+.container {
+  display: flex;
+  padding: 20px;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.container .column:nth-child(1) {
+  flex-grow: 1;
+}
+.user-card-list {
+  margin: 20px 0;
+  padding: 0;
+  list-style: none;
+}
+.users-tasks {
+  margin: 20px 0;
+  padding: 0;
+  list-style: none;
+}
+
+.user-card-list__item {
+  margin-bottom: 1px;
+}
+.user-card {
+  display: flex;
+  align-items: center;
+  color: #000;
+  text-decoration: none;
+  letter-spacing: -0.25px;
+}
+.user-card__name {
+  font-size: 12px;
+}
+.user-card:hover {
+  text-decoration: underline;
+}
+.user-card__avatar {
+  flex-shrink: 0;
+  display: inline-block;
+  margin-right: 8px;
+  width: 20px;
+  height: 20px;
+  border: 2px solid blueviolet;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.user-card__avatar img {
+  max-width: 100%;
+  height: auto;
+}
+.user-info__link {
+  font-size: 12px;
+  color: #000;
+}
+
+.user-info-table th {
+  font-weight: 500;
+}
+.user-info-table {
+  border-collapse: collapse;
+}
+.user-info-table tr th {
+  border: 1px solid #ccc;
+  border-top: 0;  
+}
+.user-info-table tr th,
+.user-info-table tr td {
+  text-align: center;
+}
+.user-info-table tr:last-child td {
+  border: 1px solid #ccc;
+  border-top: 0;
+  border-bottom: 0;
+}
+.user-info-table tr:last-child td:first-child {
+  border-left: 0;
+}
+.user-info-table tr:last-child td:last-child {
+  border-right: 0;
+}
+.user-info-table tr th:first-child {
+  border-left: 0;
+}
+.user-info-table tr th:last-child {
+  border-right: 0;
+}
+
+.users-tasks-item {
+  margin-bottom: 5px;
+  border-bottom: 1px solid #ccc;
+}
+.users-tasks-item:last:child {
+  border-bottom: 0;
+}
+
+.user-info-table .red {
+  color: #fff;
+  background-color: red;
+}
+
+h2, h3 {
+  font-weight: 500;
+}
+h2 {
+  font-size: 16px;
+}
+h3 {
+  font-size: 14px;
+}
+
+#user-name {
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 13px;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+} */
+
+
+/* body {
+  padding-top: 50px;
+  padding-bottom: 20px;
+} */
+
+/* Set padding to keep content from hitting the edges */
+/* .body-content {
+  padding-left: 15px;
+  padding-right: 15px;
+} */
+/* Override the default bootstrap behavior where horizontal description lists 
+ will truncate terms that are too long to fit in the left column 
+*/
+/* .dl-horizontal dt {
+  white-space: normal;
+} */

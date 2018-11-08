@@ -1,0 +1,21 @@
+<app-loader [IsLoad]="IsLoad" class="row">
+  
+    <div class="col m-1 p-1" [ngClass]="{'card bg-light':ActivityCards.length}">
+
+      <h3 class="card-title text-center">{{ActivityTitle}}</h3>
+      <h5 class="card-subtitle text-muted text-right">{{ActivitySumm | time}}</h5>
+
+      <app-card [Card]="item" *ngFor="let item of ActivityCards"></app-card>
+
+    </div>
+
+    <div class="col m-1 p-1" [ngClass]="{'card bg-light':TodayCards.length}">
+
+      <h3 class="card-title text-center">{{TodayTitle}}</h3>
+      <h5 class="card-subtitle text-muted text-right">{{TodaySumm | time}}</h5>
+
+      <app-card [Card]="item" [ShowState]="false" *ngFor="let item of TodayCards"></app-card>
+
+    </div>
+
+  </app-loader>

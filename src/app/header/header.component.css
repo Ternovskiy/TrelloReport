@@ -1,0 +1,12 @@
+/* nav a {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+  color: #fff;  
+} */
+.bd-navbar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1071;
+}

@@ -1,0 +1,29 @@
+<app-loader [IsLoad]="IsLoad">
+  <div class="row">
+
+    <div class="col-12 col-md card bg-light m-1 p-1">
+      <div class="car-body">
+        <h3 class="card-title text-center">Активность</h3>
+        <h5 class="card-subtitle text-muted text-right">{{ActivitySumm | time}}</h5>
+        <app-card *ngFor="let card of ActivityCards" [Card]="card"></app-card>
+      </div>
+    </div>
+
+    <div class="col-12 col-md card bg-light m-1 p-1">
+      <div class="car-body">
+        <h3 class="card-title text-center">На сегодня</h3>
+        <h5 class="card-subtitle text-muted text-right">{{TodaySumm | time}}</h5>
+        <app-card *ngFor="let card of TodayCards" [Card]="card" [ShowState]="false"></app-card>
+      </div>
+    </div>
+
+    <div class="col-12 col-md card bg-light m-1 p-1">
+      <div class="car-body">
+        <h3 class="card-title text-center">Сейчас</h3>
+        <h5 class="card-subtitle text-muted text-right">{{NowSumm | time}}</h5>
+        <app-card *ngFor="let card of NowCards" [Card]="card" [ShowState]="false"></app-card>
+      </div>
+    </div>
+
+  </div>
+</app-loader>
